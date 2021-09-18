@@ -1,10 +1,10 @@
 <?php
 $db = "crud";
-$conn = mysqli_connect("localhost", "root", "", $db) or die("Kết nối lỗi");
+$conn = mysqli_connect("localhost", "root", "", $db) or die("connection error");
 $sql = 'select * from login';
 $result = mysqli_query($conn, $sql) or die("error");
 ?>
-<h1 style="text-align:center">Danh sách tài khoản của khách</h1>
+<h1 style="text-align:center">READ</h1>
 <table border="4" style="font-size: 20px;margin: 0 auto;">
     <tr>
         <th>STT</th>
